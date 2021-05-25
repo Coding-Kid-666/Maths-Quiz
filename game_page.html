@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maths Quiz</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+	<h4 id="plr1_name"></h4><span id="plr1_score"></span>
+	<br>
+	<h4 id="plr2_name"></h4><span id="plr2_score"></span>
+
+<div class="container">
+	<center>
+		<h2 style="color: white;">Maths Quiz!!</h2>
+		<h3 id="player_question"></h3>
+		<br>
+		<h3 id="player_answer"></h3>
+		<br>
+		<br>
+		<div id="output" class="col-lg-6">
+		</div>
+		<br>
+		<br>
+		<label id="if_wrong"><b></b></label>
+		<br>
+		<br>
+
+		<label>Send 2 numbers: <b style="color: red">Try putting numbers which are smaller than 10.</b></label>
+		<br>
+		<h3>Number 1:</h3>
+		<br>
+		<input type="text" id="number_1" class="form-control" placeholder="Your number here">
+		<br>
+		<h3>Number 2:</h3>
+		<br>
+		<input type="text" id="number_2" class="form-control" placeholder="Your number here">
+		<br>
+		<br>
+		<button type="button" onclick="send();" style="width: 30%;" class="btn btn-success">Send</button>
+		<br>
+		<br>
+		<label>Try different modes! By default set at multiply.</label>
+		<br>
+		<button id="add" class="btn btn-info" onclick="add()">Add</button>&nbsp;
+		<button id="subtract" class="btn btn-success" onclick="subtract()">Subtract</button>&nbsp;
+		<button id="multiply" class="btn btn-info" onclick="multiply()">Multiply</button>&nbsp;
+		<button id="divide" class="btn btn-success" onclick="divide()">Divide</button>
+		<br>
+		<br>
+
+	</center>
+</div>
+
+<script src="game_page.js"></script>
+</body>
+</html>
